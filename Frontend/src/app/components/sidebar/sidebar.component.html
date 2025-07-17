@@ -1,10 +1,25 @@
-<div class="logo">
-    <a href="https://www.creative-tim.com" class="simple-text">
+<div style="background: white !important">
+    <div class="logo">
+    <!-- <a href="#" class=""> -->
         <!-- <div class="logo-img">
             <img src="/assets/img/angular2-logo-red.png"/>
         </div> -->
-        Neo Infra
-    </a>
+       <div class="text-center">
+            <h2
+                class="display-4 text-uppercase"
+                style="
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+                letter-spacing: 2px;
+                font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;"
+
+            >
+                <i class="bi bi-building me-4" style="font-size: 1.5em;"></i>
+                Neo Infra
+            </h2>
+        </div>
+
+
+    <!-- </a> -->
 </div>
 <div class="sidebar-wrapper">
   <div *ngIf="isMobileMenu()">
@@ -56,10 +71,13 @@
   </div>
     <ul class="nav">
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-            <a class="nav-link" [routerLink]="[menuItem.path]">
+           <div background = "transparent">
+             <a class="nav-link d-flex align-items-center" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
-                <p>{{menuItem.title}}</p>
+                <span class="menu-title text-truncate b-3"style="font-size: 18px !important"><b>{{menuItem.title}}</b></span>
             </a>
+           </div>
         </li>
     </ul>
+</div>
 </div>
