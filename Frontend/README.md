@@ -1,170 +1,255 @@
-<p align="center">
-  <a href="https://github.com/ng-matero">
-    <img width="150" src="https://github.com/ng-matero/ng-matero/assets/20625845/65c43b2c-4c6a-49f0-8cb3-77d336815725">
-  </a>
-</p>
+# [Neo Infra Hackathon - Free Bootstrap Material Design Admin](https://www.creative-tim.com/product/material-dashboard-angular2)[![version][version-badge]][CHANGELOG]
 
-<h1 align="center">
-NG-MATERO
-</h1>
+![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/material-dashboard-angular.gif)
 
-<div align="center">
+**[Neo Infra Hackathon](https://www.creative-tim.com/product/material-dashboard-angular2/)** is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
 
-Ng-Matero is an Angular admin template made with Material components.
+Material Dashboard makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/ng-matero/ng-matero/badge)](https://www.codefactor.io/repository/github/ng-matero/ng-matero)
-[![npm](https://img.shields.io/npm/v/ng-matero.svg)](https://www.npmjs.com/package/ng-matero)
-[![GitHub Release Date](https://img.shields.io/github/release-date/ng-matero/ng-matero)](https://github.com/ng-matero/ng-matero/releases)
-[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/ng-matero/ng-matero/blob/master/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/ng-matero/ng-matero.svg)](https://gitter.im/matero-io/ng-matero)
-[![docs](https://img.shields.io/badge/docs-gitbook-red)](https://nzbin.gitbook.io/ng-matero/)
-[![Material Extensions](https://img.shields.io/badge/material-extensions-blue)](https://github.com/ng-matero/extensions#readme)
-[![Financial Contributors on Open Collective](https://opencollective.com/ng-matero/all/badge.svg?label=financial+contributors)](https://opencollective.com/ng-matero)
+This product came as a result of users asking for a material dashboard after we released our successful [Material Kit](http://www.creative-tim.com/product/material-kit). We developed it based on your feedback and it is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
-</div>
+Material Dashboard comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
 
-## ✨ Features
+Material Dashboard uses a framework built by our friend [Federico - Bootstrap Material Design](http://fezvrasta.github.io/bootstrap-material-design/), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
-- Material Extensions
-- Schematics support
-- Modern design style
-- Multiple admin layout
-- Powerful color system
-- Rich CSS helpers
-- Dark mode support
-- RTL support
-- Internationalization
-- Authentication
-- HTTP interceptors
-- Permissions management
+Special thanks go to:
+[Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
+[Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
+We are very excited to share this dashboard with you and we look forward to hearing your feedback!
 
-## 📖 Documentation
+You can find the Github Repo here.
 
-[English](https://nzbin.gitbook.io/ng-matero/v/en-2/) | [简体中文](https://nzbin.gitbook.io/ng-matero/v/zh-1/)
+## Table of Contents
 
-## 📦 Compatibility
+* [Versions](#versions)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Deploy](#deploy)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
-Which version to use?
 
-| Angular | Material | Ng-Matero | Extensions |
-| ------- | -------- | --------- | ---------- |
-| v20     | v20      | 20.x.x    | 20.x.x     |
-| v19     | v19      | 19.2.0    | 19.4.1     |
-| v18     | v18      | 18.3.0    | 18.5.1     |
-| v17     | v17      | 17.2.0    | 17.3.8     |
-| v16     | v16      | 16.3.0    | 16.3.11    |
-| v15     | v15      | 15.3.0    | 15.6.5     |
-| v14     | v14      | 14.3.0    | 14.8.5     |
-| v13     | v13      | 13.1.1    | 13.3.3     |
-| v12     | v12      | 12.8.0    | 12.10.3    |
-| v11     | v11      | 11.3.2    | 11.5.2     |
-| v10     | v10      | 10.4.1    | 10.16.6    |
-| v9      | v9       | 9.7.2     | 9.11.14    |
-| v8      | v8       | 0.16.0    | 0.9.3      |
+## Versions
 
-## 🔧 Installation
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
 
-The project has support `ng add` yet.
+| HTML | Angular | Vue | React |
+| --- | --- | --- | --- |
+| [![Material Dashboard HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Neo Infra Hackathon](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2) | [![Vue Material Dashboard ](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react)
 
-```bash
-$ ng new <project-name>
-$ cd <project-name>
-$ ng add ng-matero
+## Demo
+
+| Dashboard | User Profile | Tables | Icons | Notifications |
+| --- | --- | --- | --- | --- |
+| [![Start page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/dashboard.png?raw=true)](https://demos.creative-tim.com/material-dashboard-angular2/#/dashboard) | [![User profile page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/user-profile.png?raw=true)](https://demos.creative-tim.com/material-dashboard-angular2/#/user-profile) | [![Tables page ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/tables.png?raw=true)](https://demos.creative-tim.com/material-dashboard-angular2/#/table-list) | [![Icons Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/icons.png?raw=true)](https://demos.creative-tim.com/material-dashboard-angular2/#/maps) | [![Notifications page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-angular/notifications.png?raw=true)](https://demos.creative-tim.com/material-dashboard-angular2/#/notifications)
+
+[View More](https://demos.creative-tim.com/material-dashboard-angular2/#/dashboard).
+
+## Quick start
+
+Quick start options:
+
+- [Download from Github](https://github.com/tiniestory/material-dashboard-angular2/archive/master.zip).
+- [Download from Creative Tim](http://www.creative-tim.com/product/material-dashboard-angular2).
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/material-dashboard-angular2&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
+
+## Terminal Commands
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0 and angular 4.x.
+
+1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
+2. Open Terminal
+3. Go to your file project
+4. Make sure you have installed [Angular CLI](https://github.com/angular/angular-cli) already. If not, please install.
+5. Run in terminal: ```npm install```
+6. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
+```
+material-dashboard-angular
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── angular-cli.json
+├── documentation
+├── e2e
+├── karma.conf.js
+├── package-lock.json
+├── package.json
+├── protractor.conf.js
+├── src
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── components
+│   │   │   ├── components.module.ts
+│   │   │   ├── footer
+│   │   │   │   ├── footer.component.css
+│   │   │   │   ├── footer.component.html
+│   │   │   │   ├── footer.component.spec.ts
+│   │   │   │   └── footer.component.ts
+│   │   │   ├── navbar
+│   │   │   │   ├── navbar.component.css
+│   │   │   │   ├── navbar.component.html
+│   │   │   │   ├── navbar.component.spec.ts
+│   │   │   │   └── navbar.component.ts
+│   │   │   └── sidebar
+│   │   │       ├── sidebar.component.css
+│   │   │       ├── sidebar.component.html
+│   │   │       ├── sidebar.component.spec.ts
+│   │   │       └── sidebar.component.ts
+│   │   ├── dashboard
+│   │   │   ├── dashboard.component.css
+│   │   │   ├── dashboard.component.html
+│   │   │   ├── dashboard.component.spec.ts
+│   │   │   └── dashboard.component.ts
+│   │   ├── icons
+│   │   │   ├── icons.component.css
+│   │   │   ├── icons.component.html
+│   │   │   ├── icons.component.spec.ts
+│   │   │   └── icons.component.ts
+│   │   ├── layouts
+│   │   │   └── admin-layout
+│   │   │       ├── admin-layout.component.html
+│   │   │       ├── admin-layout.component.scss
+│   │   │       ├── admin-layout.component.spec.ts
+│   │   │       ├── admin-layout.component.ts
+│   │   │       ├── admin-layout.module.ts
+│   │   │       └── admin-layout.routing.ts
+│   │   ├── maps
+│   │   │   ├── maps.component.css
+│   │   │   ├── maps.component.html
+│   │   │   ├── maps.component.spec.ts
+│   │   │   └── maps.component.ts
+│   │   ├── notifications
+│   │   │   ├── notifications.component.css
+│   │   │   ├── notifications.component.html
+│   │   │   ├── notifications.component.spec.ts
+│   │   │   └── notifications.component.ts
+│   │   ├── table-list
+│   │   │   ├── table-list.component.css
+│   │   │   ├── table-list.component.html
+│   │   │   ├── table-list.component.spec.ts
+│   │   │   └── table-list.component.ts
+│   │   ├── typography
+│   │   │   ├── typography.component.css
+│   │   │   ├── typography.component.html
+│   │   │   ├── typography.component.spec.ts
+│   │   │   └── typography.component.ts
+│   │   ├── upgrade
+│   │   │   ├── upgrade.component.css
+│   │   │   ├── upgrade.component.html
+│   │   │   ├── upgrade.component.spec.ts
+│   │   │   └── upgrade.component.ts
+│   │   └── user-profile
+│   │       ├── user-profile.component.css
+│   │       ├── user-profile.component.html
+│   │       ├── user-profile.component.spec.ts
+│   │       └── user-profile.component.ts
+│   ├── assets
+│   │   ├── css
+│   │   │   └── demo.css
+│   │   ├── img
+│   │   └── scss
+│   │       ├── core
+│   │       └── material-dashboard.scss
+│   ├── environments
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.css
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+├── tslint.json
+└── typings
+
 ```
 
-You can also git clone the starter repo to start. But it's not recommended.
+## Browser Support
 
-```bash
-$ git clone --depth=1 git@github.com:ng-matero/starter.git <project-name>
-$ cd <project-name>
-$ npm install
-```
+At present, we officially aim to support the last two versions of the following browsers:
 
-## ⚙️ Schematics
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-You can use the ng-matero schematics to generate a module or a page.
 
-### Module schematic
 
-Generate a lazy loaded module.
+## Resources
+- Demo: <https://demos.creative-tim.com/material-dashboard-angular2/#/dashboard>
+- Download Page: <https://www.creative-tim.com/product/material-dashboard-angular2>
+- Documentation: <https://demos.creative-tim.com/material-dashboard-angular2/#/documentation/tutorial>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-angular2/issues)
+- [Material Kit](https://www.creative-tim.com/product/material-kit?ref=github-mda-free) - For Front End Development
 
-```bash
-$ ng g ng-matero:module <module-name>
-```
+## Reporting Issues
 
-The new module will be created in `routes` folder, it will be added in `routes.module` and its route declaration will be added in `routes-routing.module` automaticly.
+We use GitHub Issues as the official bug tracker for the Material Dashboard. Here are some advices for our users that want to report an issue:
 
-### Page schematic
+1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-Generate a page component in the module.
 
-```bash
-$ ng g ng-matero:page <page-name> -m=<module-name>
-```
+## Technical Support or Questions
 
-Generate a entry component in the page component.
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
 
-```bash
-$ ng g ng-matero:page <page-name>/<entry-component-name> -m=<module-name> -e=true
-```
 
-### Example
 
-Just two steps after initializing the project, you can get a route page.
+## Licensing
 
-```bash
-$ ng g ng-matero:module abc
-$ ng g ng-matero:page def -m=abc
-```
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
 
-Take a look at `http://localhost:4200/#/abc/def`, enjoy it!
+- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-angular2/blob/master/LICENSE.md)
 
-## 💻 Development
 
-```bash
-$ git clone git@github.com:ng-matero/ng-matero.git
-$ cd ng-matero
-$ npm install
-$ npm run start
-```
+## Useful Links
 
-Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 
-## 🗺 Roadmap
+##### Social Media
 
-Check [projects](https://github.com/ng-matero/ng-matero/projects) to know the develop plans.
+Twitter: <https://twitter.com/CreativeTim>
 
-## 🤝 Contributors
+Facebook: <https://www.facebook.com/CreativeTim>
 
-### Code Contributors
+Dribbble: <https://dribbble.com/creativetim>
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/ng-matero/ng-matero/graphs/contributors"><img src="https://opencollective.com/ng-matero/contributors.svg?width=890&button=false" /></a>
+Google+: <https://plus.google.com/+CreativetimPage>
 
-### Financial Contributors
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/ng-matero/contribute)]
+[CHANGELOG]: ./CHANGELOG.md
 
-#### Individuals
-
-<a href="https://opencollective.com/ng-matero"><img src="https://opencollective.com/ng-matero/individuals.svg?width=890"></a>
-
-#### Organizations
-
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/ng-matero/contribute)]
-
-<a href="https://opencollective.com/ng-matero/organization/0/website"><img src="https://opencollective.com/ng-matero/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/1/website"><img src="https://opencollective.com/ng-matero/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/2/website"><img src="https://opencollective.com/ng-matero/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/3/website"><img src="https://opencollective.com/ng-matero/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/4/website"><img src="https://opencollective.com/ng-matero/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/5/website"><img src="https://opencollective.com/ng-matero/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/6/website"><img src="https://opencollective.com/ng-matero/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/7/website"><img src="https://opencollective.com/ng-matero/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/8/website"><img src="https://opencollective.com/ng-matero/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/ng-matero/organization/9/website"><img src="https://opencollective.com/ng-matero/organization/9/avatar.svg"></a>
-
-## 📃 License
-
-MIT
+[version-badge]: https://img.shields.io/badge/version-2.8.0-blue.svg
