@@ -6,5 +6,7 @@
 export const environment = {
   production: false,
   mixpanelToken: 'eeb6ec1fde791269876d3473ba9e4671',
-  apiURL : 'http://127.0.0.1:8000'
+  apiURL : 'http://127.0.0.1:8000',
+  universalURL:"http://127.0.0.1:5000"
+
 };

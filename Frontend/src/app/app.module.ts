@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ConfigCardsComponent } from './config-cards/config-cards.component';
 import { CommonComponentComponent } from './common-component/common-component.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { CommonComponentComponent } from './common-component/common-component.co
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    BrowserModule
   ],
   declarations: [
     AppComponent,
