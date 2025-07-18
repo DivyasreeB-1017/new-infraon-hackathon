@@ -1,5 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-import { ROUTES } from '../sidebar/sidebar.component';
+import { Component, OnInit, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -10,10 +9,14 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
     private listTitles: any[];
+    @Output() smartviewToggled = new EventEmitter<boolean>();
+    isSmartviewOn: boolean = false;
     location: Location;
       mobile_menu_visible: any = 0;
     private toggleButton: any;
     private sidebarVisible: boolean;
+    @Input() menuItems: any;
+
 
     constructor(location: Location,  private element: ElementRef, private router: Router) {
       this.location = location;
@@ -21,7 +24,8 @@ export class NavbarComponent implements OnInit {
     }
 
     ngOnInit(){
-      this.listTitles = ROUTES.filter(listTitle => listTitle);
+    console.log("ONINIT>>>>",this.menuItems)
+      this.listTitles = this.menuItems.filter(listTitle => listTitle);
       const navbar: HTMLElement = this.element.nativeElement;
       this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
       this.router.events.subscribe((event) => {
@@ -114,12 +118,19 @@ export class NavbarComponent implements OnInit {
       if(titlee.charAt(0) === '#'){
           titlee = titlee.slice( 1 );
       }
-
-      for(var item = 0; item < this.listTitles.length; item++){
-          if(this.listTitles[item].path === titlee){
-              return this.listTitles[item].title;
+      console.log(this.menuItems)
+      for(var item = 0; item < this.menuItems.length; item++){
+          if(this.menuItems[item].path === titlee){
+              return this.menuItems[item].title;
           }
       }
       return 'Dashboard';
     }
+
+    toggleSmartview() {
+        this.isSmartviewOn = !this.isSmartviewOn;
+        this.smartviewToggled.emit(this.isSmartviewOn);
+        // Optional: emit to parent, store in service, or call API
+        console.log('Smartview is now:', this.isSmartviewOn);
+        }
 }

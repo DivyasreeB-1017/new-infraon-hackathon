@@ -1,11 +1,16 @@
-<div style="background: white !important">
-    <div class="logo">
-    <!-- <a href="#" class=""> -->
-        <!-- <div class="logo-img">
-            <img src="/assets/img/angular2-logo-red.png"/>
-        </div> -->
-       <div class="text-center">
-            <h2
+<div class="logo" style="padding: 0px !important;">
+    <!-- <a href="#" class="text-center"> 
+       <div class="logo-img">
+            <img src="https://10.0.5.58/assets/images/infraon_logo.svg"/>
+        </div>
+    </a> -->
+  <div class="text-center">
+    <h2 class="brand-logo">
+  <i class="bi bi-building me-3"></i>
+  <span class="brand-text">Neo <strong>Infra</strong></span>
+</h2>
+
+            <!-- <h2
                 class="display-4 text-uppercase"
                 style="
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -15,11 +20,9 @@
             >
                 <i class="bi bi-building me-4" style="font-size: 1.5em;"></i>
                 Neo Infra
-            </h2>
+            </h2> -->
+        <!-- <img src="https://10.0.5.58/assets/images/infraon_logo.svg" style="height: 50px;"/> -->
         </div>
-
-
-    <!-- </a> -->
 </div>
 <div class="sidebar-wrapper">
   <div *ngIf="isMobileMenu()">
@@ -69,15 +72,47 @@
         </li>
     </ul>
   </div>
-    <ul class="nav">
-        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-           <div background = "transparent">
-             <a class="nav-link d-flex align-items-center" [routerLink]="[menuItem.path]">
-                <i class="material-icons">{{menuItem.icon}}</i>
-                <span class="menu-title text-truncate b-3"style="font-size: 18px !important"><b>{{menuItem.title}}</b></span>
-            </a>
-           </div>
+   <ul class="nav">
+  <li
+    *ngFor="let menuItem of menuItems"
+    class="nav-item"
+    routerLinkActive="active"
+    [ngClass]="menuItem.class"
+  >
+    <a
+      class="nav-link"
+      [routerLink]="[menuItem.path]"
+      *ngIf="!menuItem.children || menuItem.children.length === 0"
+      (click)="onMenuClick(menuItem)"
+    >
+      <i class="material-icons">{{ menuItem.icon }}</i>
+      <p>{{ menuItem.title }}</p>
+    </a>
+
+    <!-- For items with children -->
+    <div *ngIf="menuItem.children && menuItem.children.length > 0">
+      <a class="nav-link"  (click)="onMenuClick(menuItem)">
+        <i class="material-icons">{{ menuItem.icon }}</i>
+        <p>
+          {{ menuItem.title }}
+          <b class="caret"></b>
+        </p>
+      </a>
+
+      <ul class="nav sub-nav" *ngIf="menuItem.expanded">
+        <li
+          *ngFor="let child of menuItem.children"
+          class="nav-item"
+          routerLinkActive="active"
+        >
+          <a class="nav-link" [routerLink]="[child.path]">
+            <i class="material-icons">{{ child.icon }}</i>
+            <p>{{ child.title }}</p>
+          </a>
         </li>
-    </ul>
-</div>
+      </ul>
+    </div>
+  </li>
+</ul>
+
 </div>

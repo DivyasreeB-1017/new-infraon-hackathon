@@ -2,8 +2,10 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy, PopStateEvent } from '@angular/common';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import PerfectScrollbar from 'perfect-scrollbar';
-import * as $ from "jquery";
+import $ from "jquery";
 import { filter, Subscription } from 'rxjs';
+import { MenuTrackerService } from 'app/components/sidebar/services/menu-tracker.service';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-admin-layout',
@@ -14,10 +16,13 @@ export class AdminLayoutComponent implements OnInit {
   private _router: Subscription;
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
-
-  constructor( public location: Location, private router: Router) {}
+  menuItems : any
+  isSmartviewOn : any = false
+  constructor( public location: Location, private router: Router,private trackerService: MenuTrackerService) {}
 
   ngOnInit() {
+      this.getInitilizeMenuOptions(this.isSmartviewOn)
+      console.log("main :",this.menuItems)
       const isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
 
       if (isWindows && !document.getElementsByTagName('body')[0].classList.contains('sidebar-mini')) {
@@ -154,4 +159,26 @@ export class AdminLayoutComponent implements OnInit {
       return bool;
   }
 
+  getInitilizeMenuOptions(smartview : any) {
+    // const user_id = '12345'; // Replace with actual user ID logic
+    // const menu_id = menuItem.path;
+    // const time = formatDate(new Date(), 'yyyy-MM-dd HH:mm:ss', 'en-US');
+    console.log("API HITTING SMARTIVIEW:",smartview)
+    this.trackerService.getInitialMenu({ smartgridview: smartview }).subscribe({
+      next: (res) => {
+        this.menuItems = res.data[0].menu_config_data;
+        console.log('Menu items:', this.menuItems);
+      },
+      error: (err) => {
+        console.error('Error fetching menu data', err);
+      }
+    });
+  }
+
+  onSmartviewChange(state: boolean) {
+    console.log("EMITED VALUE:",state)
+    console.log('Smartview toggled in AdminLayoutComponent:', state);
+    this.isSmartviewOn = state
+    this.getInitilizeMenuOptions(this.isSmartviewOn); // Call API with updated state
+}
 }

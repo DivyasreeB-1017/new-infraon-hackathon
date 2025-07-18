@@ -1,0 +1,9 @@
+<div class="dashboard-grid">
+  <div class="card" *ngFor="let card of modules">
+    <div class="card-body">
+      <i class="fas" [ngClass]="card.icon"></i>
+      <h5 class="mt-2">{{ card.title }}</h5>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+</div>

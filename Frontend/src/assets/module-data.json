@@ -1,0 +1,128 @@
+[
+  {
+    "icon": "fa-user",
+    "color": "#00c2c2",
+    "title": "Account Signup",
+    "description": "Please verify and confirm contact information for Infraon administrator Account. This will be used for all future communication from Team Infraon."
+  },
+  {
+    "icon": "fa-users",
+    "color": "#38c172",
+    "title": "Active Users",
+    "description": "A real-time user presence page displaying active session participants."
+  },
+  {
+    "icon": "fa-address-book",
+    "color": "#0ea5e9",
+    "title": "Address Book",
+    "description": "Add location information of branch offices and support hubs."
+  },
+  {
+    "icon": "fa-pen",
+    "color": "#3b82f6",
+    "title": "Advanced Resource Configuration",
+    "description": "Will provide options to update configurations of the resources available in the system."
+  },
+  {
+    "icon": "fa-bullhorn",
+    "color": "#ef4444",
+    "title": "Announcement",
+    "description": "This Module allows users to create and manage personalized announcements, ensuring timely communication with targeted audiences."
+  },
+  {
+    "icon": "fa-code-branch",
+    "color": "#f59e0b",
+    "title": "API Registration",
+    "description": "Register third-party APIs to integrate them with Infraon."
+  },
+  {
+    "icon": "fa-bell",
+    "color": "#facc15",
+    "title": "Event Association Inference",
+    "description": "Uncovers relationships between asset components based on repeated event-raising patterns, providing insights into how different events are linked over time."
+  },
+  {
+    "icon": "fa-tasks",
+    "color": "#8b5cf6",
+    "title": "Asynchronous Task Manager",
+    "description": "This module monitors background tasks using Celery for asynchronous execution and scheduling, enabling real-time operations with distributed message passing."
+  },
+  {
+    "icon": "fa-hand-paper",
+    "color": "#7c3aed",
+    "title": "Attendance Configuration",
+    "description": "Manage settings like ClockIn and ClockOut and Geofencing for accurate and flexible attendance tracking."
+  },
+  {
+    "icon": "fa-pen",
+    "color": "#3b82f6",
+    "title": "Advanced Resource Configuration",
+    "description": "Will provide options to update configurations of the resources available in the system."
+  },
+  {
+    "icon": "fa-bullhorn",
+    "color": "#ef4444",
+    "title": "Announcement",
+    "description": "This Module allows users to create and manage personalized announcements, ensuring timely communication with targeted audiences."
+  },
+  {
+    "icon": "fa-code-branch",
+    "color": "#f59e0b",
+    "title": "API Registration",
+    "description": "Register third-party APIs to integrate them with Infraon."
+  },
+  {
+    "icon": "fa-bell",
+    "color": "#facc15",
+    "title": "Event Association Inference",
+    "description": "Uncovers relationships between asset components based on repeated event-raising patterns, providing insights into how different events are linked over time."
+  },
+  {
+    "icon": "fa-tasks",
+    "color": "#8b5cf6",
+    "title": "Asynchronous Task Manager",
+    "description": "This module monitors background tasks using Celery for asynchronous execution and scheduling, enabling real-time operations with distributed message passing."
+  },
+  {
+    "icon": "fa-hand-paper",
+    "color": "#7c3aed",
+    "title": "Attendance Configuration",
+    "description": "Manage settings like ClockIn and ClockOut and Geofencing for accurate and flexible attendance tracking."
+  },
+  {
+    "icon": "fa-pen",
+    "color": "#3b82f6",
+    "title": "Advanced Resource Configuration",
+    "description": "Will provide options to update configurations of the resources available in the system."
+  },
+  {
+    "icon": "fa-bullhorn",
+    "color": "#ef4444",
+    "title": "Announcement",
+    "description": "This Module allows users to create and manage personalized announcements, ensuring timely communication with targeted audiences."
+  },
+  {
+    "icon": "fa-code-branch",
+    "color": "#f59e0b",
+    "title": "API Registration",
+    "description": "Register third-party APIs to integrate them with Infraon."
+  },
+  {
+    "icon": "fa-bell",
+    "color": "#facc15",
+    "title": "Event Association Inference",
+    "description": "Uncovers relationships between asset components based on repeated event-raising patterns, providing insights into how different events are linked over time."
+  },
+  {
+    "icon": "fa-tasks",
+    "color": "#8b5cf6",
+    "title": "Asynchronous Task Manager",
+    "description": "This module monitors background tasks using Celery for asynchronous execution and scheduling, enabling real-time operations with distributed message passing."
+  },
+  {
+    "icon": "fa-hand-paper",
+    "color": "#7c3aed",
+    "title": "Attendance Configuration",
+    "description": "Manage settings like ClockIn and ClockOut and Geofencing for accurate and flexible attendance tracking."
+  }
+]
