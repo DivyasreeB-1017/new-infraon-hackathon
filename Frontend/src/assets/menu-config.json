@@ -1,0 +1,209 @@
+[{
+  "_id": {
+    "$oid": "68796c9179c4c5abbb08ae81"
+  },
+  "user_id": 1,
+  "org_id": 1,
+  "menu_config_data": [
+    {
+      "module": "dashboard",
+      "title": "Dashboard",
+      "path": "/dashboard",
+      "icon": "dashboard",
+      "visit_count": 10,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "assets",
+      "title": "Assets",
+      "path": "/assets",
+      "icon": "inventory",
+      "visit_count": 0,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "users",
+      "title": "Users",
+      "path": "/users",
+      "icon": "group",
+      "visit_count": 5,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "settings",
+      "title": "Settings",
+      "path": "/settings",
+      "icon": "settings",
+      "visit_count": 10,
+      "timestamp": {
+        "$date": "2025-07-18T12:18:17.484Z"
+      }
+    },
+    {
+      "module": "reports",
+      "title": "Reports",
+      "path": "/reports",
+      "icon": "bar_chart",
+      "visit_count": 4,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "alerts",
+      "title": "Alerts",
+      "path": "/alerts",
+      "icon": "notifications",
+      "visit_count": 1,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "compliance",
+      "title": "Compliance",
+      "path": "/compliance",
+      "icon": "verified_user",
+      "visit_count": 6,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "tickets",
+      "title": "Tickets",
+      "path": "/tickets",
+      "icon": "confirmation_number",
+      "visit_count": 2,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "logs",
+      "title": "Logs",
+      "path": "/logs",
+      "icon": "receipt",
+      "visit_count": 3,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "analytics",
+      "title": "Analytics",
+      "path": "/analytics",
+      "icon": "analytics",
+      "visit_count": 5,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "network",
+      "title": "Network",
+      "path": "/network",
+      "icon": "router",
+      "visit_count": 1,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "performance",
+      "title": "Performance",
+      "path": "/performance",
+      "icon": "speed",
+      "visit_count": 3,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "inventory",
+      "title": "Inventory",
+      "path": "/inventory",
+      "icon": "list",
+      "visit_count": 6,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "policy",
+      "title": "Policy",
+      "path": "/policy",
+      "icon": "policy",
+      "visit_count": 4,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "backup",
+      "title": "Backup",
+      "path": "/backup",
+      "icon": "backup",
+      "visit_count": 2,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "updates",
+      "title": "Updates",
+      "path": "/updates",
+      "icon": "update",
+      "visit_count": 1,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "integrations",
+      "title": "Integrations",
+      "path": "/integrations",
+      "icon": "extension",
+      "visit_count": 0,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "scheduler",
+      "title": "Scheduler",
+      "path": "/scheduler",
+      "icon": "schedule",
+      "visit_count": 2,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "help",
+      "title": "Help",
+      "path": "/help",
+      "icon": "help",
+      "visit_count": 0,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    },
+    {
+      "module": "profile",
+      "title": "Profile",
+      "path": "/profile",
+      "icon": "person",
+      "visit_count": 0,
+      "timestamp": {
+        "$date": "2025-07-17T19:57:57.749Z"
+      }
+    }
+  ]
+}]
